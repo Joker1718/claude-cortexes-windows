@@ -1,0 +1,30 @@
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+*.sublime-workspace
+
+# Environment and secrets
+.env
+.env.*
+.dev.vars
+*.local
+wrangler.toml
+
+# Node (if scripts ever get a package.json)
+node_modules/
+
+# Logs
+*.log
+
+# Temporary files
+tmp/
+temp/
+*.tmp
