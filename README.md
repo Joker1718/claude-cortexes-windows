@@ -88,22 +88,22 @@ topic files           context               incidents, decisions
 
 ## Quick Start
 
-### Option A: npx (fastest)
+### Option A(null:NONE_FUNCTIONING): npx (fastest)
 
 ```bash
 # From your project directory
-npx claude-cortex init my-project
+npx claude-cortexes-windows init my-project
 ```
 
 ### Option B: Clone and set up
 
 ```powershell
 git clone https://github.com/Joker1718/claude-cortexes-windows.git
-cd claude-cortex
+cd claude-cortexes-windows
 .\setup.ps1
 
 # From your project directory
-C:\path\to\claude-cortex\scripts\init.ps1 my-project
+C:\path\to\claude-cortexes-windows\scripts\init.ps1 my-project
 ```
 
 This creates a `.claude\memory\` directory in your project with all templates pre-configured.
