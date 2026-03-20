@@ -97,25 +97,24 @@ npx claude-cortex init my-project
 
 ### Option B: Clone and set up
 
-```bash
+```powershell
 git clone https://github.com/renefichtmueller/claude-cortex.git
 cd claude-cortex
-chmod +x setup.sh
-./setup.sh
+.\setup.ps1
 
 # From your project directory
-/path/to/claude-cortex/scripts/init.sh my-project
+C:\path\to\claude-cortex\scripts\init.ps1 my-project
 ```
 
-This creates a `.claude/memory/` directory in your project with all templates pre-configured.
+This creates a `.claude\memory\` directory in your project with all templates pre-configured.
 
 ### 3. Tell Claude to use it
 
-Add this to your project's `.claude/CLAUDE.md`:
+Add this to your project's `.claude\CLAUDE.md`:
 
 ```markdown
 ## Memory System
-At the START of every session, read `.claude/memory/MEMORY.md` and load relevant topic files.
+At the START of every session, read `.claude\memory\MEMORY.md` and load relevant topic files.
 At the END of every session, update the activity log with: what was done, decisions made, next steps.
 When you learn something reusable (pattern, fix, gotcha), add it to the relevant topic file.
 ```
@@ -230,9 +229,9 @@ Memory files are plain Markdown. Sync them with Dropbox, iCloud, Google Drive, o
 ### Validation & Health Checks
 Scripts to verify memory structure, find stale entries, and report statistics about your knowledge base.
 
-```bash
-./scripts/validate.sh    # Check memory structure health
-./scripts/stats.sh       # Show memory statistics
+```powershell
+.\scripts\validate.ps1    # Check memory structure health
+.\scripts\stats.ps1       # Show memory statistics
 ```
 
 ## File Types
@@ -260,10 +259,10 @@ Each example demonstrates realistic memory content that a team might build up ov
 
 | Script | Description |
 |---|---|
-| `scripts/init.sh` | Initialize memory structure in a project |
-| `scripts/sync.sh` | Sync memory files across devices |
-| `scripts/validate.sh` | Validate memory structure and find issues |
-| `scripts/stats.sh` | Display memory statistics |
+| `scripts\init.ps1` | Initialize memory structure in a project |
+| `scripts\sync.ps1` | Sync memory files across devices |
+| `scripts\validate.ps1` | Validate memory structure and find issues |
+| `scripts\stats.ps1` | Display memory statistics |
 
 ## Documentation
 
@@ -289,7 +288,7 @@ Each example demonstrates realistic memory content that a team might build up ov
 3. **Be specific in incident runbooks.** Include the exact error message, root cause, and fix.
 4. **Cross-reference between files.** Link project files to relevant incidents and patterns.
 5. **Prune quarterly.** Archive stale entries. Memory should be current and relevant.
-6. **Use the validation script.** Run `./scripts/validate.sh` weekly to catch structural issues.
+6. **Use the validation script.** Run `.\scripts\validate.ps1` weekly to catch structural issues.
 
 ## Related Projects
 

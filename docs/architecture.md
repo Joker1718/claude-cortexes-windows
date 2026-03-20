@@ -91,7 +91,7 @@ When a file exceeds these limits, split it. For example, a large project file mi
 Memory files sync using whatever file-sync mechanism you already use:
 
 ### Dropbox / iCloud / Google Drive
-The `scripts/sync.sh` (or `scripts/sync.ps1` on Windows) script copies memory files to a sync folder. Changes propagate automatically through the cloud service. The script uses rsync (or robocopy on Windows) for efficient incremental sync.
+The `scripts\sync.ps1` script copies memory files to a sync folder. Changes propagate automatically through the cloud service. The script uses robocopy for efficient incremental sync.
 
 ### Git
 Memory files can live inside your project's Git repo (in `.claude/memory/`). They sync when you push and pull. This is the simplest approach if your project already uses Git.
