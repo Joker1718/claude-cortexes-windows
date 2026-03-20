@@ -159,7 +159,7 @@ At the end of each quarter (or whenever memory feels cluttered), do a cleanup pa
 
 4. **Prune MEMORY.md.** Remove links to archived files. Keep the index focused on current, active knowledge.
 
-5. **Run validation.** Use `scripts/validate.sh` to catch any broken links or orphaned files after cleanup.
+5. **Run validation.** Use `scripts/validate.sh` (or `scripts/validate.ps1` on Windows) to catch any broken links or orphaned files after cleanup.
 
 ---
 

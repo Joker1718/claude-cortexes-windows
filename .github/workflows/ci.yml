@@ -6,12 +6,12 @@ on:
     branches: [main]
 jobs:
   validate:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Validate scripts are executable
+      - name: Validate scripts
         run: |
-          bash scripts/validate.sh examples/fullstack-saas
-          bash scripts/stats.sh examples/fullstack-saas
+          .\scripts\validate.ps1 examples/fullstack-saas
+          .\scripts\stats.ps1 examples/fullstack-saas
       - name: Test CLI
         run: node bin/claude-cortex.js --help

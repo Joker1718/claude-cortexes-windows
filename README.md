@@ -1,7 +1,7 @@
 <p align="center">
-  <h1 align="center">🧠 claude-cortex</h1>
+  <h1 align="center">claude-cortex (WINDOWS)</h1>
   <p align="center">
-    <strong>Give Claude Code a long-term memory.</strong><br>
+    <strong>Give Claude Code a long-term memory</strong><br>
     <em>Persistent knowledge across sessions, projects, and devices — no database, no cloud, just files.</em>
   </p>
   <p align="center">
@@ -11,19 +11,9 @@
     <a href="docs/best-practices.md">Best Practices</a> &middot;
     <a href="CONTRIBUTING.md">Contributing</a>
   </p>
-  <p align="center">
-    <a href="https://github.com/renefichtmueller/claude-cortex/stargazers"><img src="https://img.shields.io/github/stars/renefichtmueller/claude-cortex?style=flat-square&color=yellow" alt="Stars"></a>
-    <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue?style=flat-square" alt="License"></a>
-    <a href="https://github.com/renefichtmueller/claude-cortex/issues"><img src="https://img.shields.io/github/issues/renefichtmueller/claude-cortex?style=flat-square" alt="Issues"></a>
-    <a href="https://github.com/renefichtmueller/claude-cortex/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square" alt="PRs Welcome"></a>
-  </p>
 </p>
 
 ---
-
-## The Problem
-
-> **[🚀 Live Demo](https://claude-cortex-demo.pages.dev)** — Try it in your browser, no installation needed.
 
 Every time you start a new Claude Code session, Claude starts from zero. It doesn't know:
 

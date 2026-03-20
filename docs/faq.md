@@ -20,7 +20,7 @@ Yes. Memory files can live in your project's Git repository and be reviewed in p
 Inside your project at `.claude/memory/`. For cross-project knowledge that applies everywhere, use `~/.claude/memory/` (your home directory).
 
 ### How do I add memory to an existing project?
-Run `scripts/init.sh your-project-name /path/to/project`. This creates the `.claude/memory/` directory with templates. Then start filling in the project file and activity log.
+Run `scripts/init.sh your-project-name /path/to/project` (or `scripts/init.ps1` on Windows). This creates the `.claude/memory/` directory with templates. Then start filling in the project file and activity log.
 
 ### What if I have multiple projects?
 Each project gets its own `.claude/memory/` directory. For shared knowledge (patterns that apply everywhere), create a global memory at `~/.claude/memory/` and reference it from each project's MEMORY.md.
@@ -48,18 +48,18 @@ Instruct Claude (via CLAUDE.md) to update the activity log at the end of every s
 ## Sync
 
 ### How do I sync across devices?
-Use `scripts/sync.sh` with one of the supported methods: Dropbox, iCloud, Git, or a custom directory. The simplest approach is to keep memory files in a Git repo and push/pull normally.
+Use `scripts/sync.sh` (or `scripts/sync.ps1` on Windows) with one of the supported methods: Dropbox, iCloud, Git, or a custom directory. The simplest approach is to keep memory files in a Git repo and push/pull normally.
 
 ### What about sync conflicts?
 The activity log is append-only with timestamps, so conflicts are rare and easy to resolve (keep both entries). For other files, the most recently modified version is usually correct. See [architecture.md](architecture.md) for detailed conflict resolution guidance.
 
 ### Can I sync only memory files (not the whole project)?
-Yes. Use `scripts/sync.sh directory` to copy memory files to any shared location. Or create a separate Git repo just for memory files and symlink it into each project.
+Yes. Use `scripts/sync.sh directory` (or `scripts/sync.ps1 directory` on Windows) to copy memory files to any shared location. Or create a separate Git repo just for memory files and symlink it into each project.
 
 ## Maintenance
 
 ### How do I know if my memory is healthy?
-Run `scripts/validate.sh .claude/memory`. It checks for broken links, unreferenced files, oversized files, and stale activity logs.
+Run `scripts/validate.sh .claude/memory` (or `scripts/validate.ps1 .claude/memory` on Windows). It checks for broken links, unreferenced files, oversized files, and stale activity logs.
 
 ### When should I archive old entries?
 When activity log entries are older than 3 months and no longer provide useful context, move them to an archive file. Similarly, incident runbooks for bugs that have been stable for months can be archived. See the "Seasonal Cleanup" pattern in [patterns.md](patterns.md).

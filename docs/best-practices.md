@@ -94,7 +94,7 @@ Set a monthly reminder to review your memory files. Look for:
 When information becomes outdated, move it to an "Archive" section at the bottom of the file rather than deleting it. Old decisions and patterns can still provide useful context.
 
 ### Run validation weekly
-Use `scripts/validate.sh` to catch structural issues before they become problems. Common issues:
+Use `scripts/validate.sh` (or `scripts/validate.ps1` on Windows) to catch structural issues before they become problems. Common issues:
 - Files linked in MEMORY.md that were renamed or deleted
 - Files in the directory that aren't referenced in the index
 - Files that have grown too large and should be split
