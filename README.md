@@ -98,7 +98,7 @@ npx claude-cortex init my-project
 ### Option B: Clone and set up
 
 ```powershell
-git clone https://github.com/renefichtmueller/claude-cortex.git
+git clone https://github.com/Joker1718/claude-cortexes-windows.git
 cd claude-cortex
 .\setup.ps1
 
